@@ -1,19 +1,193 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Fusion Media | AI Automations & Agents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .calendly-inline-widget {
+            min-width: 320px;
+            height: 600px;
+            border: none;
+        }
+    </style>
+    <!-- Calendly script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-bold mb-4">REACH FUSION MEDIA</h1>
+            <p class="text-xl md:text-2xl italic mb-12">AI Automations & Agents to Scale Your Business</p>
+            <a href="#book-call" class="bg-black text-white px-8 py-4 text-lg font-medium rounded-none hover:bg-gray-800 transition duration-300">Book a Free Call</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Transforming Business Through AI</h2>
+            <p class="text-lg leading-relaxed">
+                We specialize in building custom AI-driven workflows and intelligent agents to optimize and automate business processes. 
+                Whether you're a startup or a large organization, we provide tailored solutions to save time and scale operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card p-8 border border-gray-200 text-center">
+                    <div class="text-4xl mb-6">🤖</div>
+                    <h3 class="text-xl font-bold mb-4">AI Automation</h3>
+                    <p class="text-gray-700">
+                        Automate repetitive tasks with custom workflows designed to save you time and resources.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card p-8 border border-gray-200 text-center">
+                    <div class="text-4xl mb-6">🧠</div>
+                    <h3 class="text-xl font-bold mb-4">GPT Agents</h3>
+                    <p class="text-gray-700">
+                        Deploy smart GPT agents that communicate, process data, and assist your team with critical tasks.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card p-8 border border-gray-200 text-center">
+                    <div class="text-4xl mb-6">📈</div>
+                    <h3 class="text-xl font-bold mb-4">Consultation</h3>
+                    <p class="text-gray-700">
+                        Get personalized AI strategy sessions to align automation solutions with your business goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Book a Call Section -->
+    <section id="book-call" class="py-20 px-4 bg-gray-100">
+        <div <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/alessiogherghelca/ai-automation-discovery-call" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">What Our Clients Say</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-black pl-6">
+                    <p class="text-lg italic mb-2">
+                        "Reach Fusion Media helped us automate our entire customer service process. Our team can now focus on what truly matters."
+                    </p>
+                    <p class="font-medium">— Client A</p>
+                </div>
+                <div class="border-l-4 border-black pl-6">
+                    <p class="text-lg italic mb-2">
+                        "The custom AI agents they built for us boosted our productivity and streamlined operations. Highly recommended!"
+                    </p>
+                    <p class="font-medium">— Client B</p>
+                </div>
+                <div class="border-l-4 border-black pl-6">
+                    <p class="text-lg italic mb-2">
+                        "Their strategic approach to automation transformed our workflow. We've seen a 40% increase in operational efficiency."
+                    </p>
+                    <p class="font-medium">— Client C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-md mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Connect With Us</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com/YOURHANDLE" class="social-icon text-2xl hover:text-gray-700">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/YOURHANDLE" class="social-icon text-2xl hover:text-gray-700">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com/@YOURHANDLE" class="social-icon text-2xl hover:text-gray-700">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 border-t border-gray-200 text-center">
+        <p class="text-gray-600">© 2025 Reach Fusion Media. All Rights Reserved.</p>
+        <div class="mt-2">
+            <a href="#" class="text-gray-600 hover:text-black text-sm">Privacy Policy</a>
+            <span class="mx-2">•</span>
+            <a href="#" class="text-gray-600 hover:text-black text-sm">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const sections = document.querySelectorAll('section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Alessio777/https-huggingface-co-spaces-alessio777-reach-fusion-media" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
